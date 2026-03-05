@@ -1,16 +1,81 @@
-# React + Vite
+ Testing Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains my practice and learning related to **testing in React applications**. The goal of this project is to understand how automated testing works and how developers verify that components behave correctly.
 
-Currently, two official plugins are available:
+It includes examples of component testing and user interaction testing to ensure UI elements render properly and update as expected.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* JavaScript
+* Vitest / Jest
+* React Testing Library
+* Node.js
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ Project Structure
+
+```
+Testing
+│
+├── src
+│   ├── components
+│   │   ├── Counter.jsx
+│   │   └── Counter.test.jsx
+│   └── App.jsx
+│
+├── package.json
+└── README.md
+```
+
+* components/contains React components and their tests.
+* .test.jsx files include automated test cases.
+
+---
+
+Running Tests
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run tests:
+
+```bash
+npm run test
+```
+
+---
+
+ Lessons Learned
+
+* Testing helps ensure features work correctly and prevents bugs.
+* Writing tests based on **user behavior** makes tests more reliable.
+* Automated tests make it easier to verify changes quickly.
+* Smaller components are easier to test and maintain.
+* Test failures help identify issues early in development.
+
+---
+
+Learning Goals
+
+Through this project, I aim to:
+
+- Improve my testing practices in React applications
+- Learn integration testing
+- Understand mocking and API testing
+- Increase test coverage in real projects
+
+---
+
+Author
+
+Fiza-n
+Software Engineering Student learning modern **web development and testing practices**.
+
+

@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react'
 
-const UserProfile = () => {
+const UserProfile = ({userId=4}) => {
     const [user,setUser] = useState(null);
 
    useEffect(()=>{
-        fetch(`https://jsonplaceholder.typicode.com/users/1`)
+        fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
         .then((res) => res.json())
         .then((data) => setUser(data))
 
-    },[])
+    },[userId])
   return (
     <div>
         <h2>{user?.name}</h2>
